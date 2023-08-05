@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+*::-webkit-scrollbar{
+    display: none;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 270px 1fr 270px;
+    height: 100%;
+    overflow: hidden;
+}
+.disable{
+    display: none;
+}
+
+/* Details Navbar design starts */
+
+#menu{
+    background: #ffefd0;
+}
+.brand-logo{
+    padding: 0 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.brand-logo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 30px;
+    color: black;
+    border-top: 1px solid #C24914;
+    border-bottom: 1px solid #682C0E;
+}
+.menu-item a:hover{
+    background: #f9d181;
+}
+.menu-item a:active{
+    background: #feda91;
+}
+
+/* Details Navbar design ends */
+
+/* Footer design starts */
+
+#footer{
+    position: absolute;
+    bottom: 0;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+.social-media .fa-facebook{
+    padding: 6px 10px;
+}
+.social-media i{
+    font-size: 20px;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.social-media i:hover{
+    color: #ffefd0;
+    background: black;
+}
+#footer p{
+    margin: 15px 12px;
+}
+
+/* Footer design ends */
+
+/* Food Container Header design starts */
+
+#food-container{
+    background: whitesmoke;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    position: sticky;
+    top: 0;
+    font-size: 18px;
+    color: black;
+    background: whitesmoke;
+    z-index: 1;
+}
+.your-address{
+    padding: 8px 16px;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.util input, .user a{
+    font-size: 18px; 
+    color: black;
+    padding: 4px 16px;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.util i{
+    padding: 8px 16px;
+    margin-left: 16px;
+    border: 1px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.util i:hover{
+    color: whitesmoke;
+    background: black;
+}
+.util i:active{
+    background: rgb(36, 35, 35);
+}
+
+/* Food Container Header design ends */
+
+/* Food Items design starts */
+
+#food-items{
+    padding: 10px auto;
+}
+.foods{
+    margin: 10px 50px 30px;
+}
+.category-name, .item-menu{
+    margin: 10px;
+    font-size: 35px;
+    color: #C38154;
+}
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.rating{
+    padding: 6px;
+    color: black;
+    background: white;
+    border-radius: 20px;
+}
+.fa-heart-o{
+    padding: 6px;
+    color: rgb(255, 48, 48);
+    background: white;
+    border-radius: 50%;
+}
+.fa-heart-o:hover{
+    color: white;
+    background: rgb(255, 48, 48);
+}
+.item-card{
+    width: 180px;
+    height: 240px;
+    padding: 10px;
+    margin: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+.veg{
+    background: rgb(170, 255, 170);
+}
+.non-veg{
+    background: rgb(243, 186, 186);
+}
+.item-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    display: block;
+    transition: 0.5s all ease-in-out;
+}
+.item-card:hover img{
+    transform: scale(1.2);
+}
+.item-name{
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 600;
+}
+.item-price{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Food Items design ends */
+
+/* Food Category Navbar design starts */
+
+#food-nav{
+    background: #ffefd0;
+}
+.taste-header{
+    margin: 33px 21px;
+}
+.border{
+    width: 120px;
+    height: 4px;
+    margin: 0 10px;
+    margin-bottom: 40px;
+    background: #682C0E;
+}
+.list-card{
+    display: flex;
+    align-items: center;
+    margin: 15px 20px 0;
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    background: #feda91;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+.list-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.3s all ease-in-out;
+}
+.list-name{
+
+    margin: 0 20px;
+}
+.list-card:hover{
+    background: #f9d181;
+}
+.list-card:hover img{
+    transform: scale(1.1);
+}
+.list-card:active{
+    background: #feda91;
+}
+
+/* Food Category Navbar design ends */
